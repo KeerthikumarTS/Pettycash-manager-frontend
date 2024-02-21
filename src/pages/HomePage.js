@@ -5,7 +5,6 @@ import axios from "axios";
 import moment from "moment";
 import Spinner from "../components/Spinner";
 import {
-  UnorderedListOutlined,
   AreaChartOutlined,
   EditOutlined,
   DeleteOutlined,

@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Spinner from "../components/Spinner";
 import { API } from "../components/api";
+
+
 const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -33,6 +35,8 @@ const Login = () => {
       navigate("/");
     }
   }, [navigate]);
+
+
   return (
     <>
       <div className="register-page ">

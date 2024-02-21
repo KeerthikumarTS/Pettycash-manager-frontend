@@ -34,7 +34,7 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link className="navbar-brand" to="/">
-              <h2 className="text-dark">Pettycash Manager</h2>
+              <h2 className="text-dark">PC-MANAGER</h2>
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
               <li className="nav-item h5">
