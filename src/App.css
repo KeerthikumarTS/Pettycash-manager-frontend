@@ -6,6 +6,17 @@
     padding: 0px;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .roboto-condensed{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
   }
 
   footer {

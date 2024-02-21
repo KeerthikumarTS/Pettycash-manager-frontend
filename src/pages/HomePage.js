@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Layout from "./../components/Layout/Layout";
+import Layout from "../components/Layout/Layout";
 import { Form, Input, message, Modal, Select, Table, DatePicker } from "antd";
 import axios from "axios";
 import moment from "moment";
@@ -9,6 +9,7 @@ import {
   AreaChartOutlined,
   EditOutlined,
   DeleteOutlined,
+  TableOutlined,
 } from "@ant-design/icons";
 import Analytics from "../components/Analytics";
 import { API } from "../components/api";
@@ -183,7 +184,7 @@ const HomePage = () => {
         </div>
 
         <div className="switch-icons">
-          <UnorderedListOutlined
+          <TableOutlined
             title="table analytics"
             className={`mx-2 ${
               viewData === "table" ? "active-icons" : "inactive-icon"
@@ -224,7 +225,7 @@ const HomePage = () => {
           <Form.Item label="Amount" name="amount">
             <Input type="text" />
           </Form.Item>
-          <Form.Item label="type" name="type">
+          <Form.Item label="Type" name="type">
             <Select>
               <Select.Option value="income">Income</Select.Option>
               <Select.Option value="expense">Expense</Select.Option>
@@ -240,7 +241,7 @@ const HomePage = () => {
               <Select.Option value="bills">Bills</Select.Option>
               <Select.Option value="school">School</Select.Option>
               <Select.Option value="college">College</Select.Option>
-              <Select.Option value="fee">fee</Select.Option>
+              <Select.Option value="fee">Fee</Select.Option>
               <Select.Option value="tax">Tax</Select.Option>
             </Select>
           </Form.Item>

@@ -122,6 +122,7 @@ const Analytics = ({ allTransaction }) => {
                   <div className="card-body">
                     <h5>{category}</h5>
                     <Progress
+                      steps={20}
                       percent={((amount / totalIncomeTurnover) * 100).toFixed(
                         0
                       )}
@@ -148,6 +149,7 @@ const Analytics = ({ allTransaction }) => {
                   <div className="card-body">
                     <h5>{category}</h5>
                     <Progress
+                      steps={20}
                       percent={((amount / totalExpenseTurnover) * 100).toFixed(
                         0
                       )}
