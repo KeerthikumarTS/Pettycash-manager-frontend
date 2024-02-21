@@ -1,0 +1,94 @@
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  footer {
+    margin-top: 10rem;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+  .register-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: hsla(267, 100%, 50%, 1);
+
+    background: linear-gradient(180deg, hsla(267, 100%, 50%, 1) 0%, hsla(30, 15%, 64%, 1) 100%);
+
+    background: -moz-linear-gradient(180deg, hsla(267, 100%, 50%, 1) 0%, hsla(30, 15%, 64%, 1) 100%);
+
+    background: -webkit-linear-gradient(180deg, hsla(267, 100%, 50%, 1) 0%, hsla(30, 15%, 64%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7300FF", endColorstr="#B2A496", GradientType=1 );
+  }
+
+  .custom-label {
+    font-weight: bold;
+  }
+
+  
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-shadow: 0 0 3px gray;
+  }
+
+  .progress-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .progress-bar-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .switch-icons {
+    border: 1px solid rgba(0, 0, 0, 0.677);
+    border-radius: 5px;
+    padding: 5px 0px;
+    margin-top: 0px;
+  }
+  
+  .anticon svg {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .active-icon {
+    color: black;
+  }
+  .inactive-icon {
+    color: gray;
+  }
+  
+  .login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .test-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .test-container {
+    font-weight: bold;
+  }
+  
