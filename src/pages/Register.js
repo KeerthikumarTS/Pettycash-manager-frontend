@@ -3,6 +3,7 @@ import { Form, Input, message } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Spinner from "../components/Spinner";
+import { API } from "../components/api";
 
 
 const Register = () => {
@@ -14,7 +15,7 @@ const Register = () => {
     try {
       setLoading(true);
       await axios.post(
-        "/users/register",
+        `${API}/users/register`,
         values
       );
       message.success("Registration Successfull");
@@ -27,7 +28,7 @@ const Register = () => {
   };
 
 
-  
+
   useEffect(() => {
     if (localStorage.getItem("user")) {
       navigate("/");

@@ -11,6 +11,7 @@ import {
   DeleteOutlined,
 } from "@ant-design/icons";
 import Analytics from "../components/Analytics";
+import { API } from "../components/api";
 const { RangePicker } = DatePicker;
 
 const HomePage = () => {
@@ -74,7 +75,7 @@ const HomePage = () => {
         const user = JSON.parse(localStorage.getItem("user"));
         setLoading(true);
         const res = await axios.post(
-          "/transactions/get-transaction",
+          `${API}/transactions/get-transaction`,
           {
             userid: user._id,
             frequency,
@@ -97,7 +98,7 @@ const HomePage = () => {
     try {
       setLoading(true);
       await axios.post(
-        "/transactions/delete-transaction",
+        `${API}/transactions/delete-transaction`,
         { transacationId: record._id }
       );
       setLoading(false);
@@ -116,7 +117,7 @@ const HomePage = () => {
       setLoading(true);
       if (editable) {
         await axios.post(
-          "/transactions/edit-transaction",
+          `${API}/transactions/edit-transaction`,
           {
             payload: {
               ...values,
@@ -130,7 +131,7 @@ const HomePage = () => {
         window.location.href = "/";
       } else {
         await axios.post(
-          "/transactions/add-transaction",
+          `${API}/transactions/add-transaction`,
           {
             ...values,
             userid: user._id,
